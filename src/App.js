@@ -1,7 +1,7 @@
 import "./App.css";
 import Adding from "./Components/Adding";
 import AppFunction2 from "./Context/AppFunction2";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Complete from "./Components/Complete";
 import Active from "./Components/Active";
 import { Showing } from "./Components/Showing";
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <AppFunction2>
-        <BrowserRouter>
+        <HashRouter basename="/">
           <Routes>
             <Route path="/" element={<Adding />}>
               <Route path="/showing" element={<Showing />} />
@@ -18,7 +18,7 @@ function App() {
               <Route path="/active" element={<Active />} />
             </Route>
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </AppFunction2>
     </div>
   );
