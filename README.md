@@ -38,7 +38,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/deoruchi/todoapp.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live](https://deoruchi.github.io/todoapp/#/showing)
 
 ## My process
 
