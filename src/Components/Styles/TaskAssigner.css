@@ -114,6 +114,7 @@
   }
   .navigate {
     min-width: 90%;
+    box-shadow: none;
   }
 }
 
