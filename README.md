@@ -31,7 +31,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Alt text](<src/Screenshot (533).png>)
+
+![Alt text](<src/Screenshot (534).png>)
 
 ### Links
 
