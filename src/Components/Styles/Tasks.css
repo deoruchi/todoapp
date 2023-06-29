@@ -1,0 +1,95 @@
+/*style for the tasks and its container */
+
+.tasks {
+  color: hsl(240, 3%, 23%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.taskstag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.taskstag p {
+  cursor: pointer;
+}
+.crossed {
+  text-decoration: line-through;
+  color: rgba(220, 220, 220, 0.74);
+  cursor: pointer;
+}
+.whole2 {
+  min-width: inherit;
+  border-radius: 7px;
+  margin: 12px 0;
+  background-color: hsl(233, 14%, 35%);
+}
+
+.check {
+  border-radius: 12px;
+  font-size: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.check:checked {
+  background-color: aqua;
+}
+
+.buttondelete {
+  background-color: transparent;
+  border: none;
+  color: rgba(220, 220, 220, 0.74);
+  font-size: 16px;
+}
+
+.deletewhole {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: gray;
+}
+.whole-tasks {
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 7px;
+  border-bottom: 1px solid rgba(220, 220, 220, 0.466);
+  color: white;
+}
+
+.navigate {
+  display: flex;
+  flex-direction: row;
+  padding: 5px 7px;
+  color: grey;
+  align-items: center;
+  font-size: 16px;
+  justify-content: space-between;
+}
+
+/*light theme*/
+.whole2-light {
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.425);
+}
+
+.taskstaglight {
+  color: black;
+}
+
+.whole-taskslight {
+  color: black;
+}
+
+.crossedl {
+  text-decoration: line-through;
+  color: rgba(85, 85, 85, 0.74);
+}
+
+.light {
+  color: rgba(22, 22, 22, 0.74);
+}

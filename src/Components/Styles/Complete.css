@@ -1,0 +1,8 @@
+.complete {
+  padding: 12px;
+}
+.complete-light {
+  background-color: white;
+  color: rgb(49, 48, 48);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.425);
+}

@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Adding from "./Components/Adding";
+import AppFunction2 from "./Context/AppFunction2";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Complete from "./Components/Complete";
+import Active from "./Components/Active";
+import { Showing } from "./Components/Showing";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppFunction2>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Adding />}>
+              <Route path="/showing" element={<Showing />} />
+              <Route path="/complete" element={<Complete />} />
+              <Route path="/active" element={<Active />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </AppFunction2>
     </div>
   );
 }

@@ -1,0 +1,63 @@
+.big-body {
+  background-color: hsl(237, 14%, 26%);
+  min-width: 100%;
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 15% 10px 100vh;
+  justify-content: flex-start;
+  align-items: start;
+  color: white;
+}
+
+.tasksassigner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 45%;
+  max-width: 100%;
+}
+.image-size {
+  max-width: 100%;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-width: inherit;
+  max-width: inherit;
+}
+.image-icons {
+  cursor: pointer;
+}
+
+.drag {
+  color: grey;
+}
+
+/*light theme*/
+
+.big-bodylight {
+  background-color: white;
+}
+
+.drag-light {
+  color: rgb(66, 66, 66);
+}
+
+@media screen and (max-width: 425px) {
+  .image-size {
+    max-width: 100%;
+  }
+
+  .big-body {
+    min-width: 100vw;
+    min-height: 100vh;
+    grid-template-rows: 70px auto;
+  }
+  .logo {
+    min-width: 90vw;
+  }
+}
