@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <AppFunction2>
-        <BrowserRouter>
+        <HashRouter>
           <Routes>
             <Route path="/" element={<Adding />}>
               <Route path="/showing" element={<Showing />} />
