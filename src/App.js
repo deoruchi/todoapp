@@ -12,7 +12,7 @@ function App() {
       <AppFunction2>
         <BrowserRouter>
           <Routes>
-            <Route path="*/" element={<Adding />}>
+            <Route path="/" element={<Adding />}>
               <Route path="/showing" element={<Showing />} />
               <Route path="/complete" element={<Complete />} />
               <Route path="/active" element={<Active />} />
