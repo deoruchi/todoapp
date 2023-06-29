@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <AppFunction2>
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
             <Route path="/" element={<Adding />}>
               <Route path="/showing" element={<Showing />} />
